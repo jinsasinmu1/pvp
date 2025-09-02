@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVP Project - GitHub Pages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+            color: #f0f6fc;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #30363d;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #58a6ff;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin: 25px 0 15px;
+            color: #58a6ff;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            margin: 20px 0 10px;
+            color: #f78166;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .card {
+            background: #161b22;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid #30363d;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .steps {
+            counter-reset: step-counter;
+        }
+        
+        .step {
+            margin-bottom: 20px;
+            padding-left: 60px;
+            position: relative;
+        }
+        
+        .step:before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 45px;
+            height: 45px;
+            background: #238636;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        code {
+            background: #0d1117;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            border: 1px solid #30363d;
+        }
+        
+        pre {
+            background: #0d1117;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 15px 0;
+            border: 1px solid #30363d;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+            border: none;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #238636;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #2ea043;
+        }
+        
+        .btn-secondary {
+            background: #58a6ff;
+        }
+        
+        .btn-secondary:hover {
+            background: #79c0ff;
+        }
+        
+        .status {
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+            background: #21262d;
+            border-left: 4px solid #f78166;
+        }
+        
+        .url {
+            font-size: 1.2rem;
+            word-break: break-all;
+            color: #58a6ff;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+        }
+        
+        @media (max-width: 768px) {
+            .step {
+                padding-left: 50px;
+            }
+            
+            .step:before {
+                width: 40px;
+                height: 40px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PVP Project</h1>
+            <p>Halaman GitHub Pages untuk repository pvp</p>
+        </header>
+        
+        <div class="card">
+            <h2>Status Setup GitHub Pages</h2>
+            <div class="status">
+                <p>Website Anda saat ini <strong>belum aktif</strong>. Ikuti petunjuk di bawah untuk mengaktifkannya.</p>
+            </div>
+            
+            <p>Setelah di-deploy, website akan tersedia di:</p>
+            <p class="url">https://jinsasinmu1.github.io/pvp</p>
+        </div>
+        
+        <div class="card">
+            <h2>Cara Setup GitHub Pages</h2>
+            <p>Ikuti langkah-langkah berikut untuk mengaktifkan GitHub Pages pada repository Anda:</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <h3>Login ke GitHub</h3>
+                    <p>Buka <a href="https://github.com" target="_blank">github.com</a> dan login ke akun Anda.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Buka Repository pvp</h3>
+                    <p>Masuk ke repository <strong>jinsasinmu1/pvp</strong>.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Pergi ke Settings</h3>
+                    <p>Klik tab <strong>Settings</strong> di bagian atas repository.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Pilih Pages</h3>
+                    <p>Pada menu sidebar, pilih <strong>Pages</strong>.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Konfigurasi Source</h3>
+                    <p>Pada bagian <strong>Source</strong>, pilih:</p>
+                    <ul>
+                        <li>Branch: <strong>main</strong> atau <strong>master</strong></li>
+                        <li>Folder: <strong>/ (root)</strong> atau <strong>/docs</strong> jika menggunakan docs folder</li>
+                    </ul>
+                </div>
+                
+                <div class="step">
+                    <h3>Simpan Konfigurasi</h3>
+                    <p>Klik <strong>Save</strong> dan tunggu beberapa menit hingga GitHub Pages aktif.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Unggah File Website</h3>
+                    <p>Pastikan Anda telah mengunggah file website (index.html) ke repository Anda.</p>
+                </div>
+            </div>
+            
+            <center>
+                <a href="https://github.com/jinsasinmu1/pvp/settings/pages" class="btn" target="_blank">Buka GitHub Pages Settings</a>
+                <a href="https://github.com/jinsasinmu1/pvp" class="btn btn-secondary" target="_blank">Buka Repository</a>
+            </center>
+        </div>
+        
+        <div class="card">
+            <h2>File Index.html</h2>
+            <p>File berikut adalah contoh halaman website yang dapat Anda gunakan. Salin kode di bawah dan simpan sebagai <strong>index.html</strong> di repository Anda.</p>
+            
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;PVP Project&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+            color: #f0f6fc;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+        }
+        h1 {
+            color: #58a6ff;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            background: #238636;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin: 10px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2ea043;
+        }
+        .github-stats {
+            margin-top: 2rem;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .stat {
+            background: #161b22;
+            padding: 1rem;
+            border-radius: 6px;
+            min-width: 120px;
+            border: 1px solid #30363d;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;PVP Project&lt;/h1&gt;
+        &lt;p&gt;Selamat datang di halaman GitHub Pages untuk repository PVP.&lt;br&gt;Halaman ini dihosting menggunakan GitHub Pages.&lt;/p&gt;
+        
+        &lt;a href="https://github.com/jinsasinmu1/pvp" class="btn" target="_blank"&gt;Buka Repository&lt;/a&gt;
+        &lt;a href="https://github.com/jinsasinmu1" class="btn" target="_blank"&gt;Profil GitHub&lt;/a&gt;
+        
+        &lt;div class="github-stats"&gt;
+            &lt;div class="stat"&gt;
+                &lt;h3&gt;Status&lt;/h3&gt;
+                &lt;p&gt;Aktif&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="stat"&gt;
+                &lt;h3&gt;Host&lt;/h3&gt;
+                &lt;p&gt;GitHub Pages&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="stat"&gt;
+                &lt;h3&gt;URL&lt;/h3&gt;
+                &lt;p&gt;jinsasinmu1.github.io/pvp&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            
+            <center>
+                <a href="https://github.com/jinsasinmu1/pvp" class="btn" target="_blank">Buka Repository untuk Upload</a>
+            </center>
+        </div>
+        
+        <div class="card">
+            <h2>Tips dan Troubleshooting</h2>
+            
+            <h3>Website Tidak Muncul</h3>
+            <p>Jika website tidak muncul setelah setup, tunggu beberapa menit. GitHub membutuhkan waktu untuk deploy halaman.</p>
+            
+            <h3>Error 404</h3>
+            <p>Pastikan file index.html ada di root directory repository atau di folder yang ditentukan pada settings.</p>
+            
+            <h3>Custom Domain</h3>
+            <p>Anda dapat menggunakan domain sendiri dengan menambahkannya pada bagian Custom Domain di settings GitHub Pages.</p>
+            
+            <h3>Dukungan GitHub</h3>
+            <p>Jika mengalami masalah, kunjungi <a href="https://docs.github.com/en/pages" target="_blank">dokumentasi resmi GitHub Pages</a>.</p>
+        </div>
+        
+        <footer>
+            <p>© 2023 jinsasinmu1/pvp - GitHub Pages</p>
+            <p>Halaman ini dibuat untuk membantu setup GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script>
+        // Fungsi untuk mengecek status GitHub Pages
+        async function checkGitHubPagesStatus() {
+            const url = 'https://jinsasinmu1.github.io/pvp';
+            const statusElement = document.querySelector('.status');
+            
+            try {
+                const response = await fetch(url, { method: 'HEAD' });
+                if (response.status === 200) {
+                    statusElement.innerHTML = '<p>Website Anda <strong>sudah aktif</strong> dan dapat diakses!</p>';
+                    statusElement.style.borderLeftColor = '#238636';
+                } else {
+                    statusElement.innerHTML = '<p>Website Anda saat ini <strong>belum aktif</strong>. Ikuti petunjuk di bawah untuk mengaktifkannya.</p>';
+                }
+            } catch (error) {
+                console.log('Website belum aktif');
+            }
+        }
+        
+        // Jalankan pengecekan status
+        setTimeout(checkGitHubPagesStatus, 2000);
+        
+        // Animasi untuk elemen
+        document.addEventListener('DOMContentLoaded', function() {
+            const steps = document.querySelectorAll('.step');
+            steps.forEach((step, index) => {
+                setTimeout(() => {
+                    step.style.opacity = 1;
+                    step.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        });
+    </script>
+</body>
+</html>
